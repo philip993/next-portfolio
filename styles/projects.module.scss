@@ -1,0 +1,28 @@
+.project {
+}
+
+.body {
+  width: 80%;
+  margin: auto;
+  .sectionOne,
+  .sectionTwo {
+    width: 50%;
+    padding: 2%;
+    display: inline-block;
+    margin: auto;
+  }
+}
+
+@media all and (max-width: 770px) {
+}
+
+@media all and (max-width: 520px) {
+  .body {
+    width: 90%;
+
+    .sectionOne,
+    .sectionTwo {
+      width: 100%;
+    }
+  }
+}
