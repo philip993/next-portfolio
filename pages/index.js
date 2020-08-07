@@ -30,6 +30,10 @@ const Index = () => (
           </a>
         </IconButton>
       </div>
+      <footer className={styles.footer}>
+        <h6>Copyright &#169; 2020</h6>
+        <h6>All Rights Reserved</h6>
+      </footer>
     </Layout>
   </div>
 );
