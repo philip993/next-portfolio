@@ -1,9 +1,10 @@
 .contact {
-  position: absolute;
+  position: relative;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: #464646;
 }
 
 .header {
@@ -19,6 +20,7 @@
     padding-bottom: 8%;
   }
 }
+
 .body {
   background-color: #464646;
   padding-bottom: 20%;

@@ -48,6 +48,7 @@
   .linkedIcon,
   .gitIcon {
     color: #fff;
+
     &:hover {
       box-shadow: 0px 0px 10px #fff;
       color: #ec9706;
@@ -85,6 +86,7 @@
     &:hover {
       box-shadow: 0px 0px 5px #fff;
     }
+
     margin-left: 2%;
     margin-top: -20px;
 
@@ -123,7 +125,6 @@
   .footer {
     h6 {
       font-size: 1rem;
-      color: red;
       margin-top: -30px;
     }
   }
@@ -156,7 +157,7 @@
   .footer {
     h6 {
       font-size: 0.6rem;
-      color: blue;
+      margin-top: -20px;
     }
   }
 }

@@ -14,9 +14,9 @@ const Projects = () => (
     <header className={styles.header}>
       <h1>Projects</h1>
     </header>
-    <body className={styles.body}>
+    <div className={styles.body}>
       <section className={styles.sectionOne}>
-        <Card>
+        <Card className={styles.card}>
           <h2>E-COMMERCE</h2>
           <CardContent>
             <ul>
@@ -35,7 +35,7 @@ const Projects = () => (
       </section>
 
       <section className={styles.sectionTwo}>
-        <Card>
+        <Card className={styles.card}>
           <h2>EMPLOYEE RECORDS</h2>
           <CardContent>
             <ul>
@@ -52,7 +52,7 @@ const Projects = () => (
           </CardActionArea>
         </Card>
       </section>
-    </body>
+    </div>
   </div>
 );
 
