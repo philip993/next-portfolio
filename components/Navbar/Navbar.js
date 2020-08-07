@@ -27,7 +27,7 @@ const Navbar = () => {
       </IconButton>
       <Drawer open={isOpen} onClose={handleDrawerClose} anchor="right">
         <List onClick={handleDrawerClose} className={styles.menu}>
-          <CloseIcon className={styles.closeIcon} />
+          <CloseIcon className={styles.closeIcon} onClick={handleDrawerClose} />
           <ListItem className={styles.menuItems}>
             <Link href="/">
               <a>Home</a>
