@@ -1,20 +1,20 @@
-import { ACTIVE_LINK_FALSE, ACTTIVE_LINK_TRUE } from './NavbarActionTypes';
+import { SET_DRAWER_OPEN, SET_DRAWER_CLOSE } from './NavbarActionTypes';
 
 const initalState = {
-  isActive: null,
+  isOpen: false,
 };
 
 export const NavbarReducer = (state = initalState, action) => {
   switch (action.type) {
-    case ACTIVE_LINK_FALSE:
+    case SET_DRAWER_OPEN:
       return {
         ...state,
-        isActive: false,
+        isOpen: true,
       };
-    case ACTTIVE_LINK_TRUE:
+    case SET_DRAWER_CLOSE:
       return {
         ...state,
-        isActive: true,
+        isOpen: false,
       };
     default:
       return state;

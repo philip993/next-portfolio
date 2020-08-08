@@ -1,13 +1,13 @@
-import { ACTIVE_LINK_FALSE, ACTTIVE_LINK_TRUE } from './NavbarActionTypes';
+import { SET_DRAWER_OPEN, SET_DRAWER_CLOSE } from './NavbarActionTypes';
 
-export const setActiveTrue = () => {
+export const setDrawerOpen = () => {
   return {
-    type: ACTTIVE_LINK_TRUE,
+    type: SET_DRAWER_OPEN,
   };
 };
 
-export const setActiveFalse = () => {
+export const setDrawerClose = () => {
   return {
-    type: ACTIVE_LINK_FALSE,
+    type: SET_DRAWER_CLOSE,
   };
 };
