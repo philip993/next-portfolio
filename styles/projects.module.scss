@@ -1,5 +1,4 @@
 .project {
-
   position: relative;
   top: 0;
   bottom: 0;
@@ -11,8 +10,13 @@
 .header {
   h1 {
     font-size: 5rem;
-    padding: 2%;
+    // padding: 2%;
+    padding-top: 3%;
+    padding-left: 8%;
+    padding-right: 5%;
+    padding-bottom: 3%;
     margin: 5%;
+    margin-top: 1%;
     color: orange;
   }
 }
@@ -29,8 +33,7 @@
     margin: auto;
 
     .card {
-      background-color: #fff;
-
+      background-color: #f4f5f4;
 
       h2 {
         width: 100%;
@@ -40,18 +43,60 @@
         padding: 2%;
         margin: auto;
       }
+
+      .cardSpan {
+        width: 80%;
+        margin: auto;
+        padding: 2%;
+        height: 30vh;
+        h5 {
+          font-size: 1.2rem;
+          font-weight: bold;
+          margin-left: 2%;
+          margin-top: 0;
+        }
+        p {
+          background-color: #f4f5f4;
+          border: none;
+          margin: auto;
+          margin-top: -5%;
+          width: 100%;
+          padding: 2%;
+        }
+      }
+    }
+
+    .btnArea {
+      margin: auto;
+      text-align: center;
+
+      .btn {
+        background-color: #464646;
+        border: 1px solid #fff;
+        color: #fff;
+        font-weight: bold;
+        width: 40%;
+        margin-top: 5%;
+        margin-bottom: 2%;
+
+        &:hover {
+          box-shadow: 0px 0px 10px darkorange;
+          color: darkorange;
+        }
+      }
     }
 
     ul {
       list-style-type: square;
-      columns: 2;
+      columns: 3;
 
-      // margin: auto;
+      h5 {
+        margin-top: 0px;
+        font-size: 1.2rem;
+      }
     }
   }
 }
-
-
 
 @media all and (max-width: 770px) {
   .header {
@@ -68,12 +113,28 @@
     .sectionOne,
     .sectionTwo {
       width: 50%;
+
+      .card {
+        height: 100%;
+        .cardSpan {
+          min-height: 45vh;
+        }
+
+        ul {
+          columns: 3;
+          font-size: 0.9rem;
+
+          h5 {
+            margin-top: 0px;
+            font-size: 1rem;
+          }
+        }
+      }
     }
   }
 }
 
 @media all and (max-width: 520px) {
-
   .header {
     h1 {
       font-size: 3rem;
@@ -88,6 +149,17 @@
     .sectionOne,
     .sectionTwo {
       width: 100%;
+
+      .card {
+        height: 100%;
+        .cardSpan {
+          min-height: 50vh;
+        }
+      }
+
+      ul {
+        padding-left: 2%;
+      }
     }
   }
 }

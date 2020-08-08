@@ -18,18 +18,19 @@
 .indexMenu {
   position: relative;
   width: 50%;
-  margin-top: 5px;
+  margin-top: -2%;
 
   h1 {
     font-size: 5rem;
     color: #fff;
     padding-left: 5%;
+    padding-top: 5%;
   }
 
   h4 {
     margin-top: -20px;
     font-size: 2rem;
-    color: #fff;
+    color: orange;
     padding-left: 5%;
   }
 }
@@ -71,7 +72,7 @@
 
 @media all and (max-width: 1240px) {
   .indexMenu {
-    width: 40%;
+    width: 50%;
 
     h1 {
       font-size: 4rem;
@@ -83,10 +84,6 @@
   }
 
   .indexIcons {
-    &:hover {
-      box-shadow: 0px 0px 5px #fff;
-    }
-
     margin-left: 2%;
     margin-top: -20px;
 
