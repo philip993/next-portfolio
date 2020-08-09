@@ -3,7 +3,10 @@ module.exports = withImages({
   webpack(config, options) {
     return config;
   },
-  exportPathMap: function () {
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
     return {
       '/': { page: '/' },
       '/about': { page: '/about' },
@@ -12,5 +15,4 @@ module.exports = withImages({
       '/projects': { page: '/projects' },
     };
   },
-  distDir: 'build',
 });
