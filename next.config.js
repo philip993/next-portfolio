@@ -1,18 +1,28 @@
+const path = require('path');
 const withImages = require('next-images');
-module.exports = withImages({
+const withPlugins = require('next-compose-plugins');
+
+const nextConfig = {
+  trailingSlash: false,
+  poweredByHeader: false,
   webpack(config, options) {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@components': path.resolve('./components'),
+      '@public': path.resolve('./public'),
+      '@redux': path.resolve('./redux'),
+    };
+    config.module.rules.push({
+      test: /\.(png|jpe?g|gif|svg)$/i,
+      loader: 'file-loader',
+      options: {
+        outputPath: '../public/',
+        publicPath: '/',
+      },
+    });
+
     return config;
   },
-  exportPathMap: async function (
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
-  ) {
-    return {
-      '/': { page: '/' },
-      '/about': { page: '/about' },
-      '/contact': { page: '/contact' },
-      '/cv': { page: '/cv' },
-      '/projects': { page: '/projects' },
-    };
-  },
-});
+};
+
+module.exports = nextConfig;
